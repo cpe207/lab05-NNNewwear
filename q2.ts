@@ -7,7 +7,7 @@ interface Student{
 // assign interface/type to the function definition properly
 function findTopNames(students: Student[]) {
   let check = students.filter((a:Student) => a.score > 8);
-  return check;
+  return check.map((student: Student) => student.name);
 }
 
 // assign interface/type to the student1 object properly
